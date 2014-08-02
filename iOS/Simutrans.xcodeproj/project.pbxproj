@@ -2435,7 +2435,6 @@
 					"BACKEND=SDL2",
 					"DEBUG=3",
 					"COLOUR_DEPTH=16",
-					DEBUG,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2443,6 +2442,7 @@
 					"~/Library/SDL2/include",
 				);
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/SDL/lib\"",
@@ -2450,6 +2450,7 @@
 					"$(USER_LIBRARY_DIR)/SDL2/lib",
 				);
 				PRODUCT_NAME = Simutrans;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -2469,7 +2470,6 @@
 					"BACKEND=SDL2",
 					"DEBUG=3",
 					"COLOUR_DEPTH=16",
-					DEBUG,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2477,6 +2477,7 @@
 					"~/Library/SDL2/include",
 				);
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/SDL/lib\"",
@@ -2484,6 +2485,7 @@
 					"$(USER_LIBRARY_DIR)/SDL2/lib",
 				);
 				PRODUCT_NAME = Simutrans;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
