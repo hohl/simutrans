@@ -219,7 +219,7 @@ bool internal_create_surfaces(const bool print_info)
 
 
 // open the window
-int dr_os_open(int w, int const h, int const fullscreen)
+int dr_os_open(int const h, int w, int const fullscreen)
 {
 	// some cards need those alignments
 	// especially 64bit want a border of 8bytes
@@ -238,6 +238,9 @@ int dr_os_open(int w, int const h, int const fullscreen)
 		fprintf( stderr, "Couldn't open the window: %s\n", SDL_GetError() );
 		return 0;
 	}
+    
+    // iOS: Force landscape mode
+    SDL_SetHint("SDL_HINT_ORIENTATIONS", "LandscapeLeft LandscapeRight");
 
 	if(  !internal_create_surfaces( true )  ) {
 		return 0;
@@ -252,6 +255,7 @@ int dr_os_open(int w, int const h, int const fullscreen)
 
 	display_set_actual_width( w );
     
+    // iOS: Hide the systems status bar
     [UIApplication sharedApplication].statusBarHidden = YES;
     
 	return w;
