@@ -630,6 +630,16 @@ void dr_sleep(uint32 usec)
 	SDL_Delay( usec );
 }
 
+void dr_start_textinput()
+{
+    SDL_StartTextInput();
+}
+
+void dr_stop_textinput()
+{
+    SDL_StartTextInput();
+}
+
 int main(int argc, char **argv)
 {
 	return sysmain(argc, argv);

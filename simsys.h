@@ -156,6 +156,16 @@ size_t dr_paste(char *target, size_t max_length);
  */
 bool dr_download_pakset( const char *path_to_program, bool portable );
 
+/**
+ *  Shows the touch keyboard when using system without hardware keyboard.
+ */
+void dr_start_textinput();
+
+/**
+ *  Hides the touch keyboard when using system without hardware keyboard.
+ */
+void dr_stop_textinput();
+
 int sysmain(int argc, char** argv);
 
 #endif
