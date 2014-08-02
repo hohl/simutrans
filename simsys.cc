@@ -74,6 +74,7 @@ bool dr_movetotrash(const char *path) {
 }
 #endif
 
+#ifndef USE_SANDBOXING
 char const* dr_query_homedir()
 {
 	static char buffer[PATH_MAX];
@@ -109,6 +110,7 @@ char const* dr_query_homedir()
 
 	return buffer;
 }
+#endif
 
 
 /* this retrieves the 2 byte string for the default language

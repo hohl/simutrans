@@ -270,7 +270,7 @@ bool loadsave_t::rd_open(const char *filename)
 
 bool loadsave_t::wr_open(const char *filename, mode_t m, const char *pak_extension, const char *savegame_version)
 {
-	mode = m;
+    mode = m;
 	close();
 
 	if(  is_zipped()  ) {

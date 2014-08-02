@@ -81,6 +81,8 @@ static SDL_Surface *screen;
 static int width = 16;
 static int height = 16;
 
+static char homedir[512];
+
 static int sync_blit = 0;
 static int use_dirty_tiles = 1;
 
@@ -630,6 +632,17 @@ void dr_sleep(uint32 usec)
 	SDL_Delay( usec );
 }
 
+char const* dr_query_homedir()
+{
+    if (homedir[0] == 0) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *basePath = ([paths count] > 0) ? [paths firstObject] : nil;
+        [basePath getCString:homedir maxLength:512 encoding:NSUTF8StringEncoding];
+    }
+    
+    return homedir;
+}
+
 void dr_start_textinput()
 {
     SDL_StartTextInput();
@@ -642,5 +655,5 @@ void dr_stop_textinput()
 
 int main(int argc, char **argv)
 {
-	return sysmain(argc, argv);
+    return sysmain(argc, argv);
 }

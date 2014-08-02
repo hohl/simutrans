@@ -11,6 +11,8 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		5F4F3FDC198D6B2A00F9F2F8 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAA465B198D0F9E00F2849F /* libSDL2.a */; };
+		5F4F3FDE198D758C00F9F2F8 /* pak in Resources */ = {isa = PBXBuildFile; fileRef = 5F4F3FDD198D758C00F9F2F8 /* pak */; };
 		5FAA4287198D09C300F2849F /* brueckenbauer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA4279198D09C200F2849F /* brueckenbauer.cc */; };
 		5FAA4288198D09C300F2849F /* fabrikbauer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA427B198D09C200F2849F /* fabrikbauer.cc */; };
 		5FAA4289198D09C300F2849F /* hausbauer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA427D198D09C200F2849F /* hausbauer.cc */; };
@@ -285,7 +287,6 @@
 		5FAA4658198D0B1C00F2849F /* simpeople.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA455F198D0B1C00F2849F /* simpeople.cc */; };
 		5FAA4659198D0B1C00F2849F /* simvehikel.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA4561198D0B1C00F2849F /* simvehikel.cc */; };
 		5FAA465A198D0B1C00F2849F /* simverkehr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA4563198D0B1C00F2849F /* simverkehr.cc */; };
-		5FAA465C198D0F9E00F2849F /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAA465B198D0F9E00F2849F /* libSDL2.a */; };
 		5FAA467E198D11F000F2849F /* boden.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA465F198D11F000F2849F /* boden.cc */; };
 		5FAA467F198D11F000F2849F /* brueckenboden.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA4661198D11F000F2849F /* brueckenboden.cc */; };
 		5FAA4680198D11F000F2849F /* fundament.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA4663198D11F000F2849F /* fundament.cc */; };
@@ -338,7 +339,6 @@
 		5FAA4C01198D192200F2849F /* text in Resources */ = {isa = PBXBuildFile; fileRef = 5FAA4BF3198D192200F2849F /* text */; };
 		5FAA4C02198D192200F2849F /* thanks.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FAA4BF4198D192200F2849F /* thanks.txt */; };
 		5FAA4C03198D192200F2849F /* themes in Resources */ = {isa = PBXBuildFile; fileRef = 5FAA4BF5198D192200F2849F /* themes */; };
-		5FAA4C06198D199E00F2849F /* pak192.comic-July26-V2 in Resources */ = {isa = PBXBuildFile; fileRef = 5FAA4C05198D199E00F2849F /* pak192.comic-July26-V2 */; };
 		5FAA4C08198D1B6000F2849F /* simsys_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA4C07198D1B6000F2849F /* simsys_ios.mm */; };
 		5FAA4C0A198D27E900F2849F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAA4C09198D27E900F2849F /* Images.xcassets */; };
 		FD779EDE0E26BA1200F39101 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
@@ -352,6 +352,7 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5F4F3FDD198D758C00F9F2F8 /* pak */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pak; path = ../../../../Games/simutrans/pak; sourceTree = "<group>"; };
 		5FAA4279198D09C200F2849F /* brueckenbauer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = brueckenbauer.cc; path = ../bauer/brueckenbauer.cc; sourceTree = "<group>"; };
 		5FAA427A198D09C200F2849F /* brueckenbauer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = brueckenbauer.h; path = ../bauer/brueckenbauer.h; sourceTree = "<group>"; };
 		5FAA427B198D09C200F2849F /* fabrikbauer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fabrikbauer.cc; path = ../bauer/fabrikbauer.cc; sourceTree = "<group>"; };
@@ -1030,7 +1031,6 @@
 		5FAA4BF3198D192200F2849F /* text */ = {isa = PBXFileReference; lastKnownFileType = folder; name = text; path = ../simutrans/text; sourceTree = "<group>"; };
 		5FAA4BF4198D192200F2849F /* thanks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = thanks.txt; path = ../simutrans/thanks.txt; sourceTree = "<group>"; };
 		5FAA4BF5198D192200F2849F /* themes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = themes; path = ../simutrans/themes; sourceTree = "<group>"; };
-		5FAA4C05198D199E00F2849F /* pak192.comic-July26-V2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "pak192.comic-July26-V2"; path = "../../../../Games/simutrans/pak192.comic-July26-V2"; sourceTree = "<group>"; };
 		5FAA4C07198D1B6000F2849F /* simsys_ios.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = simsys_ios.mm; path = ../simsys_ios.mm; sourceTree = "<group>"; };
 		5FAA4C09198D27E900F2849F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Simutrans/Images.xcassets; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1044,9 +1044,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4F3FDC198D6B2A00F9F2F8 /* libSDL2.a in Frameworks */,
 				5FAA468F198D12AA00F2849F /* libbz2.dylib in Frameworks */,
 				5FAA4690198D12AA00F2849F /* libz.dylib in Frameworks */,
-				5FAA465C198D0F9E00F2849F /* libSDL2.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
@@ -2017,7 +2017,7 @@
 		5FAA4C04198D197C00F2849F /* paks */ = {
 			isa = PBXGroup;
 			children = (
-				5FAA4C05198D199E00F2849F /* pak192.comic-July26-V2 */,
+				5F4F3FDD198D758C00F9F2F8 /* pak */,
 			);
 			name = paks;
 			sourceTree = "<group>";
@@ -2076,7 +2076,6 @@
 			files = (
 				5FAA4BF8198D192200F2849F /* copyright.txt in Resources */,
 				5FAA4C0A198D27E900F2849F /* Images.xcassets in Resources */,
-				5FAA4C06198D199E00F2849F /* pak192.comic-July26-V2 in Resources */,
 				5FAA4C00198D192200F2849F /* script in Resources */,
 				5FAA4BFA198D192200F2849F /* history.txt in Resources */,
 				5FAA4C02198D192200F2849F /* thanks.txt in Resources */,
@@ -2084,6 +2083,7 @@
 				5FAA461D198D0B1C00F2849F /* Doxyfile_SQAPI in Resources */,
 				5FAA4BF7198D192200F2849F /* config in Resources */,
 				5FAA4BF9198D192200F2849F /* font in Resources */,
+				5F4F3FDE198D758C00F9F2F8 /* pak in Resources */,
 				5FAA461E198D0B1C00F2849F /* export.awk in Resources */,
 				5FAA4621198D0B1C00F2849F /* filter_sq.sh in Resources */,
 				5FAA4BFC198D192200F2849F /* license.txt in Resources */,
@@ -2431,10 +2431,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					USE_C,
 					USE_TOUCHDISPLAY,
+					USE_SANDBOXING,
 					"OSTYPE=mac",
 					"BACKEND=SDL2",
 					"DEBUG=3",
 					"COLOUR_DEPTH=16",
+					SYSLOG,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2466,10 +2468,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					USE_C,
 					USE_TOUCHDISPLAY,
+					USE_SANDBOXING,
 					"OSTYPE=mac",
 					"BACKEND=SDL2",
 					"DEBUG=3",
 					"COLOUR_DEPTH=16",
+					SYSLOG,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

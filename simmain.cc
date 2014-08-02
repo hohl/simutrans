@@ -377,6 +377,10 @@ static const char *gimme_arg(int argc, char *argv[], const char *arg, int off)
 
 int simu_main(int argc, char** argv)
 {
+#ifdef USE_SANDBOXING
+    
+#endif
+    
 	static const sint16 resolutions[][2] = {
 		{  640,  480 },
 		{  800,  600 },
@@ -522,7 +526,11 @@ int simu_main(int argc, char** argv)
 	printf("Reading low level config data ...\n");
 	bool found_settings = false;
 	bool found_simuconf = false;
+#ifndef USE_SANDBOXING
 	bool multiuser = (gimme_arg(argc, argv, "-singleuser", 0) == NULL);
+#else
+    bool multiuser = true;
+#endif
 
 	tabfile_t simuconf;
 	char path_to_simuconf[24];
@@ -532,8 +540,10 @@ int simu_main(int argc, char** argv)
 		{
 			tabfileobj_t contents;
 			simuconf.read(contents);
+#ifndef USE_SANDBOXING
 			// use different save directories
 			multiuser = !(contents.get_int("singleuser_install", !multiuser)==1  ||  !multiuser);
+#endif
 			found_simuconf = true;
 		}
 		simuconf.close();
@@ -548,7 +558,6 @@ int simu_main(int argc, char** argv)
 		env_t::user_dir = env_t::program_dir;
 	}
 	chdir( env_t::user_dir );
-
 
 #ifdef REVISION
 	const char *version = "Simutrans version " VERSION_NUMBER " from " VERSION_DATE " r" QUOTEME(REVISION) "\n";
