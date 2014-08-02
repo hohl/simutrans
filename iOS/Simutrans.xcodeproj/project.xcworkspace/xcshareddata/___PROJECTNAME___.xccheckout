@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C3D54449-3AF4-4619-866F-31536069DDD8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>___PROJECTNAME___</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>880157B4-5557-4280-984F-13A6A2CF5439</key>
+		<string>https://github.com/aburch/simutrans.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/___PROJECTNAME___.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>880157B4-5557-4280-984F-13A6A2CF5439</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aburch/simutrans.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>880157B4-5557-4280-984F-13A6A2CF5439</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>880157B4-5557-4280-984F-13A6A2CF5439</string>
+			<key>IDESourceControlWCCName</key>
+			<string>simutrans</string>
+		</dict>
+	</array>
+</dict>
+</plist>
